@@ -8,7 +8,7 @@ This isn't supposed to be a complex or lengthy task so please don't spend more t
 1. Fork this repository and give [@alexcatch](https://github.com/AlexCatch) read access 
 2. Signup for a free developer account with https://www.weatherapi.com and get your API key.
 3. Ensure you have either the iOS simulator or an Android emulator installed (or you can use the Expo Go app on your physical device)
-4. Clone down the project and install node depencies in the `app` folder with either yarn or npm, it's up to you which package manager you'd like to use.
+4. Clone down the project and install node dependencies in the `hoppa-weather` folder with either yarn or npm, it's up to you which package manager you'd like to use.
 5. Start the Expo dev server with `npx expo start`
 6. Run the app on your [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/), your [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
 or on your [physical device](https://docs.expo.dev/workflow/run-on-device/)

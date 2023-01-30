@@ -22,6 +22,6 @@ that matches the detail screen wireframe.
 3. Push up your finished task to your forked repository and ensure [@alexcatch](https://github.com/AlexCatch) has read access 
 
 ## Considerations
-- You can use any third party libraries you want but ensure they don't include native dependencies so the app can be run on the Expo Go app.
+- You can use any third party libraries you want but ensure they don't include native dependencies not bundled in the Expo Go app.
 - Design isn't important but the layout is, try to stick to the general layouts in the wireframes as much as possible.
 - The app uses Typescript so make full use of it, try to avoid using any / unknown but implicit types are fine.

@@ -3,7 +3,7 @@ import axios, { AxiosResponse } from 'axios'
 import {getForecast} from '../api'
 import { ForecastResponse } from '../types'
 
-const mockResponse: Partial<AxiosResponse<ForecastResponse>> = { data: { current: {}, forecast: {}, location: {}} as ForecastResponse}
+export const mockResponse: Partial<AxiosResponse<ForecastResponse>> = { data: { current: {}, forecast: {}, location: {}} as ForecastResponse}
 
 jest.spyOn(axios, 'get').mockResolvedValue(mockResponse)
 

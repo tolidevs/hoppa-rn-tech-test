@@ -18,7 +18,7 @@ export type Forecast = {
     hour: Record<string, unknown>[]
 }
 
-type DayForecast = {
+export type DayForecast = {
     maxtemp_c: number,
     maxtemp_f: number,
     mintemp_c: number,

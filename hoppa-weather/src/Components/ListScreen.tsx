@@ -8,7 +8,7 @@ export const ListScreen = () => {
     const navigation = useNavigation()
     const { forecast, error } = useForecast()
 
-    const renderItem = (props: {item: Forecast}) => {
+    const renderItem = (props: {item: Forecast, index: number}) => {
         const { maxtemp_c, mintemp_c, daily_chance_of_rain, condition } = props.item.day
         const icon = `https:${condition.icon}`
 
@@ -31,7 +31,7 @@ export const ListScreen = () => {
                 }}
                 onPress={onPressHandler}
                 >
-                <Image source={{uri: icon}} style={{width: 50, height: 50, marginRight: 4}} />
+                <Image source={{uri: icon}} style={{width: 50, height: 50, marginRight: 4}} testID={`${icon}-icon-${props.index}`} />
                 <View style={{flexDirection: 'row', flex: 1, justifyContent: 'space-between'}}>
                     <View style={{ justifyContent: 'center'}}>
                         <Text style={{fontSize: 16}}>{condition.text}</Text>
@@ -59,6 +59,7 @@ export const ListScreen = () => {
                         renderItem={renderItem}
                         keyExtractor={item => item.date}
                         ItemSeparatorComponent={separator}
+                        testID={'forecast-list'}
                     />)
                 }
             </>
